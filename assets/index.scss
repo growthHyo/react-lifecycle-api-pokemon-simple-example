@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+body:after {
+  background: url('./image.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  content: "";
+  z-index: 9999;
+  opacity: 0.02;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a{
+  text-decoration: none;
+  color: #111;
+}
+#left {
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 30%;
+  overflow-y: scroll;
+  height: 450px;
+}
+
+#right {
+  float: left;
+  padding-left: 1em;
+  border-left: 1px solid #bbb;
+  width: 60%;
+  min-height: 100px;
+}
+
+#header {
+  background-color: #ddd;
+  margin: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#loading {
+  width: 200px;
+  height: 200px;
+  background-image: url('./loading.gif');
+  background-size: cover;
+}
+
+.article-list {}
+
+.article-row {
+  border-bottom: 1px dashed #ccc;
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.article-date {
+  font-size: 0.9em;
+  color: #666;
+  padding: 0.5em 0;
+}
+
+.article-body {
+  padding: 1em;
+  white-space: pre-line;
+  color: #333;
+
+  img {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+#new-article {
+  margin-top: 2em;
+}
+
+.link {
+  cursor: pointer;
+}
